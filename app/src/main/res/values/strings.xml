@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_label">Email</string>
+    <string name="pass_label">Password</string>
+    <string name="email_edit_field">please enter your email</string>
+    <string name="pass_edit_field">pleas enter your password</string>
+    <string name="login_btn_label">Log In</string>
+    <string name="creat_acount_labe">don\'t have an account </string>
+    <string name="creat_acount_txtbtn">create account</string>
+    <string name="welcomText1">We Are One Of The Largest Manufactures Of Footwear Having An Annual Turnover Of Over INR 5000 Million.</string>
+    <string name="welcomText2">Welcome Shoes Private Ltd. Has a Diverse Team, Pushing Footwear Designs And Striving For Innovation. We Deliver On Time And Within Budget. Quality Is Our Hallmark. The State Of The Art Technology Used In The Manufacturing Process With Italian Machinery Signifies Our Ability To Deliver The Best. We Are The Leaders In The Footwear Industry For More Than Two Decades Now, Catering To Wholesale Business, Which Is Our Strong Suite Across The Country</string>
+    <string name="get_Instructions_text">Get Instructions</string>
+    <string name="go_to_shoelist">Go To Shoe List</string>
+    <string name="instructions_text1">When selecting shoes, try both shoes on to test the fit. Regardless of the size on the label, the actual shoe size will vary slightly depending on the style, material, and construction. It is important to consider both fit and comfort while walking and to make sure that the shoes do not chafe or rub anywhere. There should be enough wiggle room for the toes and some space between the end of the toes and the inside of the shoes. When trying on the shoes, align the heel inside the shoes and secure the ankles with straps and other closures, making sure that the feet do not move back and forth inside.</string>
+    <string name="instruction_rext2">Shop for shoes after exercise or at the end of the day. This will help make sure that shoes feel comfortable when your feet are at their largest.</string>
+    <string name="re_enter_pass_label">Re Enter Password</string>
+    <string name="create_account_btn">Create Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="shoe_name_label">Shoe Name</string>
+    <string name="company_label">Company</string>
+    <string name="shoe_size_label">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="cancel_btn_txt">Cancel</string>
+    <string name="save_btn_text">Save</string>
+    <string name="add_shoe_name">Add Shoe Name</string>
+    <string name="add_company">Add Company</string>
+    <string name="add_shoe_size">Add Shoe Size</string>
+    <string name="add_description">Add Description</string>
+</resources>
