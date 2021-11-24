@@ -10,6 +10,7 @@
             type="com.udacity.shoestore.models.UserViewModel"
             />
     </data>
+<!--   constraintlayout that well hold the labels and the editfields of the user info -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

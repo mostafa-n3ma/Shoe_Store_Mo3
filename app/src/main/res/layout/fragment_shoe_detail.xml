@@ -8,6 +8,7 @@
                 name="shoeDetail"
                 type="com.udacity.shoestore.models.ShoeViewModel" />
         </data>
+<!--    constraintlayout to hold the labels and editfields of the shoe details-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
