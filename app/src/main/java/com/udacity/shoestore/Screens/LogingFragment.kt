@@ -33,7 +33,7 @@ class LogingFragment : Fragment() {
                 userViewModel.login_completed()
             }
         })
-
+        Toast.makeText(this.activity,"email : mostafa.n3ma@gmail.com \n password: 12345",Toast.LENGTH_SHORT).show()
         binding.createAccountTextbtn.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_logingFragment_to_signUpFragment)
         }

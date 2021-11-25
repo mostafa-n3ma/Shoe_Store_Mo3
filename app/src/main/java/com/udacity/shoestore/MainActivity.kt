@@ -23,11 +23,17 @@ private lateinit var appBarConfigration:AppBarConfiguration
         binding=DataBindingUtil.setContentView(this,R.layout.activity_main)
         val navController=this.findNavController(R.id.nav_host_fragment)
 
-        NavigationUI.setupActionBarWithNavController(this, navController)
-        viewModel=ViewModelProvider(this).get(ShoeViewModel::class.java)
-        navController.navigate(R.id.action_shoeListFragment_to_logingFragment)
-        appBarConfigration= AppBarConfiguration(navController.graph,null)
+        //build a new AppBarConfiguration for
+        // logingFragment and shoeListFragment  with out the up button
+        appBarConfigration= AppBarConfiguration.Builder(
+            R.id.logingFragment,
+            R.id.shoeListFragment
+        ).build()
 
+
+        NavigationUI.setupActionBarWithNavController(this, navController,appBarConfigration)
+        viewModel=ViewModelProvider(this).get(ShoeViewModel::class.java)
+        appBarConfigration= AppBarConfiguration(navController.graph,null)
 
     }
 

@@ -15,7 +15,6 @@ class UserViewModel: ViewModel() {
     val event_login_successfully:LiveData<Boolean>get() = _event_login_successfully
        init {
            _event_login_successfully.value=false
-
        }
     fun logUser(){
         if (email.value!!.isEmpty()||password.value!!.isEmpty()){
@@ -32,5 +31,6 @@ class UserViewModel: ViewModel() {
     fun login_completed(){
         _event_login_successfully.value=false
     }
+
 
 }

@@ -21,6 +21,7 @@ class ShoeListFragment : Fragment() {
 private lateinit var binding:FragmentShoeListBinding
 private lateinit var viewModel:ShoeViewModel
 private lateinit var shoeListFinal:MutableList<Shoe>
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
@@ -38,6 +39,24 @@ private lateinit var shoeListFinal:MutableList<Shoe>
         }
 
         setHasOptionsMenu(true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        return binding.root
     }
     fun inflateShoeListItems(shoelist:MutableList<Shoe>){

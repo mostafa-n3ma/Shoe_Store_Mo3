@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation"
-    app:startDestination="@id/shoeListFragment">
+    app:startDestination="@id/logingFragment">
 
     <fragment
         android:id="@+id/logingFragment"
@@ -15,8 +15,7 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/logingFragment"
-            app:popUpToInclusive="false" />
+            app:popUpTo="@id/logingFragment" />
         <action
             android:id="@+id/action_logingFragment_to_signUpFragment"
             app:destination="@id/signUpFragment"
@@ -37,8 +36,7 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/shoeListFragment"
-            app:popUpToInclusive="false" />
+            app:popUpTo="@id/welcomFragment" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
@@ -51,8 +49,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/shoeListFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"
+            />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -64,7 +63,8 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_left" />
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/logingFragment" />
     </fragment>
     <fragment
         android:id="@+id/shoeListFragment"
@@ -81,7 +81,11 @@
         <action
             android:id="@+id/action_shoeListFragment_to_logingFragment"
             app:destination="@id/logingFragment"
-            app:popUpTo="@id/logingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/shoeListFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
