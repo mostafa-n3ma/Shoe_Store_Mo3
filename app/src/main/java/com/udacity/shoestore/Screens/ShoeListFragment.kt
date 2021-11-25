@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
@@ -39,23 +40,6 @@ private lateinit var shoeListFinal:MutableList<Shoe>
         }
 
         setHasOptionsMenu(true)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
        return binding.root
     }
@@ -101,8 +85,10 @@ private fun createTextView(txt:String, size:Float):View{
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item!!, requireView().findNavController())
-                ||super.onOptionsItemSelected(item)
+        when(item.itemId){
+            R.id.logingFragment->Navigation.findNavController(requireView()).navigate(R.id.action_shoeListFragment_to_logingFragment)
+        }
+return true
 
     }
 }

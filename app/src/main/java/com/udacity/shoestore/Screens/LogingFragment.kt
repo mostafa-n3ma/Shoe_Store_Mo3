@@ -27,6 +27,31 @@ class LogingFragment : Fragment() {
         binding=DataBindingUtil.inflate(inflater,R.layout.fragment_loging,container,false)
         userViewModel=ViewModelProvider(this).get(UserViewModel::class.java)
         binding.bindingUser=userViewModel
+
+        //check empty fields
+        userViewModel.event_empty_field.observe(viewLifecycleOwner, Observer {
+            if (it){
+                Toast.makeText(this.activity,"please enter both email and password", Toast.LENGTH_SHORT).show()
+            }
+        })
+
+        //check email
+        userViewModel.event_wrong_email.observe(viewLifecycleOwner, Observer {
+            if (it){
+                Toast.makeText(this.activity,"Wrong email", Toast.LENGTH_SHORT).show()
+            }
+        })
+
+        //check password
+        userViewModel.event_wrong_password.observe(viewLifecycleOwner, Observer {
+            if (it){
+                Toast.makeText(this.activity,"Wrong password", Toast.LENGTH_SHORT).show()
+            }
+        })
+
+
+
+
         userViewModel.event_login_successfully.observe(viewLifecycleOwner, Observer {
             if (it){
                 findNavController().navigate(R.id.action_logingFragment_to_welcomFragment)
